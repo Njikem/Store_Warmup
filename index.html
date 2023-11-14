@@ -1,0 +1,40 @@
+insert into store_employee(Name, hourly_wage, Address, Phone_number) values('Alice', 35, 'fake address', 780-260-2203);
+insert into store_employee(Name, hourly_wage, Address, Phone_number) values('John', 50, '1202 Enright', 780-220-2022);
+insert into store_employee(Name, hourly_wage, Address, Phone_number) values('Jonatan', 38, 'Bright Fake', 780-270-2603);
+insert into store_employee(Name, hourly_wage, Address, Phone_number) values('Alex', 40, 'edgmont Right', 780-230-1820);
+insert into store_employee(Name, hourly_wage, Address, Phone_number) values('Nunti', 45, 'BrightMone fake', 780-103-1081);
+insert into store_employee(Name, hourly_wage, Address, Phone_number) values('Galos', 45, 'BrightMone fake', 780-103-1081);
+
+
+update store_employee set Phone_number = 780-680-2002 where phone_number = 780-260-2203;
+
+delete from store_employee where Name = 'Galos';
+
+insert into store_item(Name, price, Description, Current_stock) values('shirt', 19, 'I love that shirt', 16);
+insert into store_item(Name, price, Description, Current_stock) values('pants', 23, 'Good clothes', 16);
+insert into store_item(Name, price, Description, Current_stock) values('dress', 33, 'Alright', 16);
+insert into store_item(Name, price, Description, Current_stock) values('skirt', 50, 'Nothing more', 16);
+insert into store_item(Name, price, Description, Current_stock) values('polova', 25, 'I love love', 16);
+insert into store_item(Name, price, Description, current_stock) values('Bright', 100, 'I love that shirt', 16);
+
+
+update store_item set Current_stock = 23 where Current_stock = 16;
+
+
+delete from store_item where Name = 'Bright';
+
+
+insert into store_loyalty_member(Name, Address, Phone_number, Email) values('Galos', '1229 Enright', 780-260-2203, 'Bright@gmail.com');
+insert into store_loyalty_member(Name, Address, Phone_number, Email) values('Alex', '1229 Enright', 780-260-2203, 'Bright@gmail.com');
+insert into store_loyalty_member(Name, Address, Phone_number, Email) values('Maurice', '1229 Enright', 780-260-2203, 'Bright@gmail.com');
+insert into store_loyalty_member(Name, Address, Phone_number, Email) values('Jude', '1229 Enright', 780-260-2203, 'Bright@gmail.com');
+insert into store_loyalty_member(Name, Address, Phone_number, Email) values('Bright', '1229 Enright', 780-260-2203, 'Bright@gmail.com');
+insert into store_loyalty_member(Name, Address, Phone_number, Email) values('Morey', '1229 Enright', 780-260-2203, 'Bright@gmail.com');
+
+update store_loyalty_member set Name = 'Maureen' where Name = 'Galos';
+
+delete from store_loyalty_member where Name = 'Jude';
+
+select Name, Address from store_employee;
+
+select Name, Address from store_employee where Name = 'Nunti';
